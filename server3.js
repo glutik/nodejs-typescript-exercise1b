@@ -14,7 +14,7 @@ if (cluster.isMaster) {
         var num1 = Math.floor(Math.random() * 100);
         var num2 = Math.floor(Math.random() * 100);
         forkedCalc.on('message', (result) => {
-            res.end();
+            res.end(result);
             console.log('Worker #' + process.env.workerId + ' ended work with the result: ' + result)
         });
         console.log("Calculating " + num1 + "+" + num2)
