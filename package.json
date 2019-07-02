@@ -1,0 +1,16 @@
+{
+  "name": "exercise2",
+  "version": "1.0.0",
+  "description": "Exercise 2",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glutik/nodejs-typescript-exercise1b.git"
+  },
+  "author": "KAG",
+  "license": "ISC",
+  "homepage": "https://github.com/glutik/nodejs-typescript-exercise1b#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
