@@ -14,7 +14,7 @@ if (cluster.isMaster) {
         var child_process = require('child_process');
         var forkedCalc = child_process.fork(__dirname + '/calcsum.js');
         forkedCalc.on('message', (result) => {
-            res.end();
+            res.end(result);
             console.log('Worker #' + process.env.workerId + ' ended work with the result: ' + result)
         });
         console.log("Calculating " + num1 + "+" + num2)
